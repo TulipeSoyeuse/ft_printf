@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   ft_utils.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 19:14:09 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/13 11:09:26 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/13 15:38:37 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	putnbr_hexa(unsigned long long nb, char *base)
+int	putnbr_hexa(unsigned int nb, char *base)
 {
-	static int	count = 0;
+	int	count = 0;
 
-	if (nb > 16)
+	if (nb > 15)
 	{
-		putnbr_hexa(nb / ft_strlen(base), base);
-		putnbr_hexa(nb % ft_strlen(base), base);
+		count += putnbr_hexa(nb / ft_strlen(base), base);
+		count += putnbr_hexa(nb % ft_strlen(base), base);
 	}
 	else
 	{

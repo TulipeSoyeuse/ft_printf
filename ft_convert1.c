@@ -6,7 +6,7 @@
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 18:22:01 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/13 11:58:23 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/13 15:25:58 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	print_str(char *s)
 {
+	if (!s)
+		return (0);
 	ft_putstr_fd(s, 1);
 	return (ft_strlen(s));
 }
@@ -21,7 +23,7 @@ int	print_str(char *s)
 int	print_ptr(uintptr_t ptr)
 {
 	write(1,"0x",2);
-	return (putnbr_hexa(ptr, "0123456789abcdef") + 4);
+	return (putnbr_hexa(ptr, "0123456789abcdef") + 2);
 }
 
 int	print_int(int n)
