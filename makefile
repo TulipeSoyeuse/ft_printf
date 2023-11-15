@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 11:11:43 by rdupeux           #+#    #+#              #
-#    Updated: 2023/11/13 11:33:21 by rdupeux          ###   ########.fr        #
+#    Updated: 2023/11/15 15:39:44 by rdupeux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,10 +31,6 @@ libft.a:
 $(NAME): $(OBJ) libft.a
 	cp libft/libft.a $(NAME)
 	ar -rcs $(NAME) $(OBJ)
-
-# Create a gdb/dbx Capable Executable with DEBUG flags turned on
-debug:
-	$(CC) -g3 $(SRC) main.c && lldb ./a.out
 
 # Clean Up Objects, Exectuables, Dumps out of source directory
 clean:

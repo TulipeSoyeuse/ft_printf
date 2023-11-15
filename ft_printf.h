@@ -6,7 +6,7 @@
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 17:18:24 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/13 15:39:22 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/15 15:48:22 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ int		print_unsigned_int(unsigned int n);
 int		print_hexa_lower(int n);
 int		print_hexa_upper(int n);
 int		print_char(char c);
+int		putnbr_hexa_ptr(uintptr_t nb, char *base);
 #endif
