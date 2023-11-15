@@ -6,7 +6,7 @@
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 19:14:09 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/15 15:55:26 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/15 16:28:16 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int	putnbr_hexa_ptr(uintptr_t nb, char *base)
 	int	count = 0;
 	if (nb > 15)
 	{
-		count += putnbr_hexa(nb / ft_strlen(base), base);
-		count += putnbr_hexa(nb % ft_strlen(base), base);
+		count += putnbr_hexa_ptr(nb / 16, base);
+		count += putnbr_hexa_ptr(nb % 16, base);
 	}
 	else
 	{
