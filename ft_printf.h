@@ -6,7 +6,7 @@
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 17:18:24 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/15 15:48:22 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/17 18:30:31 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define printf_h
 # include "libft/libft.h"
 # include <stdarg.h>
+# include <stdint.h>
 int		ft_printf(const char *, ...);
 int		putnbr_hexa(unsigned int nb, char *base);
 char	*ft_itoa_unsigned(unsigned int n);

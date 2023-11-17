@@ -6,13 +6,13 @@
 #    By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/13 11:11:43 by rdupeux           #+#    #+#              #
-#    Updated: 2023/11/15 15:39:44 by rdupeux          ###   ########.fr        #
+#    Updated: 2023/11/17 18:44:26 by rdupeux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Source, Executable, Includes, Library Defines
 HEADER		=	ft_printf.h
-SRC			=	$(wildcard ft_*.c)
+SRC			=	ft_convert1.c ft_convert2.c ft_printf.c ft_utils.c
 OBJ			=	$(SRC:.c=.o)
 
 # Compiler, Linker Defines

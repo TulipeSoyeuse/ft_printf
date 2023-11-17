@@ -6,7 +6,7 @@
 /*   By: rdupeux <rdupeux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 17:17:07 by rdupeux           #+#    #+#             */
-/*   Updated: 2023/11/15 14:40:18 by rdupeux          ###   ########.fr       */
+/*   Updated: 2023/11/17 18:41:13 by rdupeux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,3 +70,14 @@ int	ft_printf(const char *str, ...)
 	va_end(a_list);
 	return (res);
 }
+
+
+/* int main(void)
+{
+	int a;
+	int b;
+
+	a = printf("%p%p\n", 0, 0);
+	b = ft_printf("%p%p\n", 0, 0);
+	printf("%d:%d",a,b);
+} */
